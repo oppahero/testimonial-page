@@ -1,0 +1,157 @@
+:root{
+    --check-color: #4CA154;
+    --stars-color: #F5C044;
+    --title-color: #18181B;
+    --bodytext-color: #52525A;
+    --card-color: #FFFFFF;
+    --bg-color: #FAFAF9;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Sora', sans-serif;
+    background-color: var(--bg-color);
+    color: var(  --bodytext-color);
+}
+
+h1{
+    font-size: 2.25rem;
+    color: var(--title-color);
+    margin: 20px 0 15px 0 ;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    padding-bottom: 17px;
+}
+
+p{
+    margin: 0;
+}
+
+.grid-item__text {
+    font-size: 1.25rem;
+    line-height: 38px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+}
+
+.grid-item__list{
+    display: flex;
+    font-size: 0.875rem;
+}
+
+.check-icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+    padding-right: 8px;
+}
+
+.circle{
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: #F5C044;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-icons svg{
+    padding-bottom: 10px;
+}
+
+.circle img{
+    width: 30px;
+}
+
+.subtitle{
+    font-weight: bolder;
+    color: var(--title-color);
+}
+
+.google-card,
+.meta-card{
+    width: 358px;
+    height: 189px;
+    padding:  28px 40px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 1em #d4d4d81e;
+    background-color: #ffffff;
+}
+
+.stars{
+    padding-left: 15px;
+}
+
+.google-card img{
+    width: 90px;
+}
+
+.meta-card img{
+    width: 85px;
+}
+
+.stars img{
+    width: 25px;
+}
+
+.google-card .header,
+.meta-card .header{
+    display: flex;
+}
+
+.google-card .subtitle,
+.meta-card .subtitle{
+    margin: 18px 0 10px 0;
+}
+
+.google-card .text, 
+.meta-card .text{
+    line-height: 25px;
+    padding-right: 25px;
+}
+
+.grid{
+    /* min-width: 1168px ; */
+    min-height: 100vh ;
+    /* min-width: 100vw ; */
+    display: flex;
+    justify-content: center;
+    margin: 165px;
+}
+
+.grid-flex{
+    width: 1169px ;
+    height: 430px;
+    display: flex;
+}
+
+.grid-item{
+    width: 584px ;
+    height: 430px;
+    padding: 0 22px;
+}
+
+.card-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+
+.card-flex__item{
+    display: flex;
+}
+
+.card-flex__item:nth-child(1){
+    justify-content: flex-end;
+}
