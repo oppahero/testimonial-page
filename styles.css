@@ -127,7 +127,8 @@ p{
     /* min-width: 100vw ; */
     display: flex;
     justify-content: center;
-    margin: 165px;
+    align-items: center;
+    /* margin: 165px; */
 }
 
 .grid-flex{
