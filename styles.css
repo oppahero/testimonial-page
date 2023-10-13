@@ -67,7 +67,8 @@ p{
 }
 
 .check-icons svg{
-    padding-bottom: 10px;
+    /* width: 50px; */
+    margin-bottom: 12px;
 }
 
 .circle img{
@@ -91,6 +92,8 @@ p{
 
 .stars{
     padding-left: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .google-card img{
@@ -118,29 +121,25 @@ p{
 .google-card .text, 
 .meta-card .text{
     line-height: 25px;
-    padding-right: 25px;
 }
 
 .grid{
-    /* min-width: 1168px ; */
     min-height: 100vh ;
-    /* min-width: 100vw ; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 165px; */
 }
 
 .grid-flex{
-    width: 1169px ;
     height: 430px;
     display: flex;
 }
 
 .grid-item{
-    width: 584px ;
+    width: 580px ;
     height: 430px;
-    padding: 0 22px;
+    margin: 0 auto;
+    padding: 0 ;
 }
 
 .card-flex{
@@ -155,4 +154,24 @@ p{
 
 .card-flex__item:nth-child(1){
     justify-content: flex-end;
+}
+
+
+@media screen and (max-width: 1180px) {
+    
+    .grid-flex{
+        flex-direction: column;   
+        gap: 60px; 
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .grid-item{
+        width: 90% ;
+        height: 570px;
+        margin: 0 auto;
+        padding: 0 ;
+    }
 }
