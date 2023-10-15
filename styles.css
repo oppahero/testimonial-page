@@ -71,8 +71,8 @@ p{
     margin-bottom: 12px;
 }
 
-.circle img{
-    width: 30px;
+.circle svg{
+    fill: url(#starGradient)
 }
 
 .subtitle{
